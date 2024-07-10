@@ -37,6 +37,9 @@
 		E4B9F71E2C29762C00596B6F /* RoadToTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B9F71D2C29762C00596B6F /* RoadToTests.swift */; };
 		E4B9F7282C29762C00596B6F /* RoadToUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B9F7272C29762C00596B6F /* RoadToUITests.swift */; };
 		E4B9F72A2C29762C00596B6F /* RoadToUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B9F7292C29762C00596B6F /* RoadToUITestsLaunchTests.swift */; };
+		E4CC03F62C3D874100D0A989 /* PlacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CC03F52C3D874100D0A989 /* PlacesVC.swift */; };
+		E4CC03F82C3D8A1700D0A989 /* PlacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CC03F72C3D8A1700D0A989 /* PlacesTableViewCell.swift */; };
+		E4CC03FA2C3D8B6400D0A989 /* PlaceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CC03F92C3D8B6400D0A989 /* PlaceData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +94,9 @@
 		E4B9F7232C29762C00596B6F /* RoadToUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoadToUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B9F7272C29762C00596B6F /* RoadToUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadToUITests.swift; sourceTree = "<group>"; };
 		E4B9F7292C29762C00596B6F /* RoadToUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadToUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E4CC03F52C3D874100D0A989 /* PlacesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesVC.swift; sourceTree = "<group>"; };
+		E4CC03F72C3D8A1700D0A989 /* PlacesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewCell.swift; sourceTree = "<group>"; };
+		E4CC03F92C3D8B6400D0A989 /* PlaceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				E4B9F7142C29762C00596B6F /* Info.plist */,
+				E4CC03F72C3D8A1700D0A989 /* PlacesTableViewCell.swift */,
+				E4CC03F52C3D874100D0A989 /* PlacesVC.swift */,
 				E42B50662C3C249C0024AB85 /* Constants.swift */,
 				E4B9F70A2C29762B00596B6F /* WelcomeVC.swift */,
 				E4B9F70F2C29762C00596B6F /* Assets.xcassets */,
@@ -182,6 +190,7 @@
 				E42B50692C3C3B0A0024AB85 /* Fonts */,
 				E4B9F7362C298EEE00596B6F /* Supporting */,
 				E42B50902C3C3F700024AB85 /* SliderCollectionViewCell.swift */,
+				E4CC03F92C3D8B6400D0A989 /* PlaceData.swift */,
 			);
 			path = RoadTo;
 			sourceTree = "<group>";
@@ -364,7 +373,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4CC03F62C3D874100D0A989 /* PlacesVC.swift in Sources */,
+				E4CC03FA2C3D8B6400D0A989 /* PlaceData.swift in Sources */,
 				E42B50912C3C3F700024AB85 /* SliderCollectionViewCell.swift in Sources */,
+				E4CC03F82C3D8A1700D0A989 /* PlacesTableViewCell.swift in Sources */,
 				E4B9F70B2C29762B00596B6F /* WelcomeVC.swift in Sources */,
 				E4B9F7072C29762B00596B6F /* AppDelegate.swift in Sources */,
 				E4B9F7092C29762B00596B6F /* SceneDelegate.swift in Sources */,

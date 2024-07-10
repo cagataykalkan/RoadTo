@@ -9,6 +9,10 @@ import UIKit
 
 class WelcomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
+    @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var startExploreLabel: UILabel!
+    @IBOutlet weak var welcomeLabel: UILabel!
+    @IBOutlet weak var userProfilePhotoImage: UIImageView!
     @IBOutlet weak var sliderCollectionView: UICollectionView!
     @IBOutlet weak var pageController: UIPageControl!
     
@@ -19,6 +23,21 @@ class WelcomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        welcomeLabel.textColor = UIColor(named: K.BrandColors.black)
+        welcomeLabel.font = UIFont(name: K.Fonts.poppinsBold, size: 32)
+        welcomeLabel.text = "Hoşgeldin Çağatay👋"
+
+        startExploreLabel.textColor = UIColor(named: K.BrandColors.grey)
+        startExploreLabel.font = UIFont(name: K.Fonts.poppinsMedium, size: 20)
+        startExploreLabel.text = "KEŞFETMEYE BAŞLA"
+                
+        userProfilePhotoImage.layer.cornerRadius = 40
+        
+        startButton.backgroundColor = UIColor(named: K.BrandColors.purple)
+        startButton.tintColor = UIColor(named: K.BrandColors.lightPurple)
+        startButton.layer.cornerRadius = 20
+        startButton.titleLabel?.font = UIFont(name: K.Fonts.poppinsRegular, size: 18)
         
         self.sliderCollectionView.backgroundColor = UIColor.white
         
@@ -35,6 +54,24 @@ class WelcomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         
         self.view.backgroundColor = UIColor(named: K.BrandColors.yellow)
     }
+    
+    
+    @IBAction func startButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "welcomeToPlaces", sender: self)
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     func starTimer( ){
         timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(cityToIndex), userInfo: nil, repeats: true)
