@@ -1,13 +1,13 @@
 //
-//  PlacesTableViewCell.swift
+//  LikedPlacesTableViewCell.swift
 //  RoadTo
 //
-//  Created by Çağatay KALKAN on 9.07.2024.
+//  Created by Çağatay KALKAN on 10.07.2024.
 //
 
 import UIKit
 
-class PlacesTableViewCell: UITableViewCell {
+class LikedPlacesTableViewCell: UITableViewCell {
 
     @IBOutlet weak var shadowImage: UIImageView!
     @IBOutlet weak var placeImage: UIImageView!

@@ -54,22 +54,10 @@ class WelcomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         
         self.view.backgroundColor = UIColor(named: K.BrandColors.yellow)
     }
-    
-    
+
     @IBAction func startButtonPressed(_ sender: Any) {
-        performSegue(withIdentifier: "welcomeToPlaces", sender: self)
+        //performSegue(withIdentifier: "welcomeToPlaces", sender: self)
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     

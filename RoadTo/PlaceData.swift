@@ -10,10 +10,12 @@ import Foundation
 class PlaceData{
     var image: String?
     var name: String?
-
-    init(image: String, name: String) {
+    var liked: Bool?
+    
+    init(image: String, name: String, liked: Bool) {
         self.image = image
         self.name = name
+        self.liked = liked
     }
     
     init(){

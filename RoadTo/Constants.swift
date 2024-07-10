@@ -26,6 +26,7 @@ struct K {   // K = Constants
         static let sliderCell = "homePageSliderCellImage"
         static let toPlaces = "welcomeToPlaces"
         static let placesCell = "placesTableViewCell"
+        static let toLikedPlaces = "PlacesToLikedPlaces"
     }
     
     struct Fonts {
@@ -33,5 +34,6 @@ struct K {   // K = Constants
         static let poppinsMedium = "Poppins-Medium"
         static let poppinsBold = "Poppins-Bold"
         static let poppinsBlack = "Poppins-Black"
+        static let poppinsEkstraBold = "Poppins-ExtraBold"
     }
 }

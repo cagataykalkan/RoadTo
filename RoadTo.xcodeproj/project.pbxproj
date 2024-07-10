@@ -28,6 +28,9 @@
 		E42B508E2C3C3B5A0024AB85 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E42B507B2C3C3B5A0024AB85 /* Poppins-Light.ttf */; };
 		E42B508F2C3C3B5A0024AB85 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E42B507C2C3C3B5A0024AB85 /* Poppins-Medium.ttf */; };
 		E42B50912C3C3F700024AB85 /* SliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42B50902C3C3F700024AB85 /* SliderCollectionViewCell.swift */; };
+		E48C2CB12C3E9FEA00C469A0 /* LikedPlacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C2CB02C3E9FEA00C469A0 /* LikedPlacesVC.swift */; };
+		E48C2CB32C3EA0D900C469A0 /* LikedPlacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C2CB22C3EA0D900C469A0 /* LikedPlacesTableViewCell.swift */; };
+		E48C2CB52C3F1EB100C469A0 /* PlaceDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C2CB42C3F1EB100C469A0 /* PlaceDetailsVC.swift */; };
 		E4B9F7072C29762B00596B6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B9F7062C29762B00596B6F /* AppDelegate.swift */; };
 		E4B9F7092C29762B00596B6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B9F7082C29762B00596B6F /* SceneDelegate.swift */; };
 		E4B9F70B2C29762B00596B6F /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B9F70A2C29762B00596B6F /* WelcomeVC.swift */; };
@@ -81,6 +84,9 @@
 		E42B507B2C3C3B5A0024AB85 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
 		E42B507C2C3C3B5A0024AB85 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		E42B50902C3C3F700024AB85 /* SliderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCollectionViewCell.swift; sourceTree = "<group>"; };
+		E48C2CB02C3E9FEA00C469A0 /* LikedPlacesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedPlacesVC.swift; sourceTree = "<group>"; };
+		E48C2CB22C3EA0D900C469A0 /* LikedPlacesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedPlacesTableViewCell.swift; sourceTree = "<group>"; };
+		E48C2CB42C3F1EB100C469A0 /* PlaceDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsVC.swift; sourceTree = "<group>"; };
 		E4B9F7032C29762B00596B6F /* RoadTo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoadTo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B9F7062C29762B00596B6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4B9F7082C29762B00596B6F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -184,8 +190,11 @@
 				E4CC03F72C3D8A1700D0A989 /* PlacesTableViewCell.swift */,
 				E4CC03F52C3D874100D0A989 /* PlacesVC.swift */,
 				E42B50662C3C249C0024AB85 /* Constants.swift */,
+				E48C2CB02C3E9FEA00C469A0 /* LikedPlacesVC.swift */,
+				E48C2CB22C3EA0D900C469A0 /* LikedPlacesTableViewCell.swift */,
 				E4B9F70A2C29762B00596B6F /* WelcomeVC.swift */,
 				E4B9F70F2C29762C00596B6F /* Assets.xcassets */,
+				E48C2CB42C3F1EB100C469A0 /* PlaceDetailsVC.swift */,
 				E4B9F70C2C29762B00596B6F /* Main.storyboard */,
 				E42B50692C3C3B0A0024AB85 /* Fonts */,
 				E4B9F7362C298EEE00596B6F /* Supporting */,
@@ -374,13 +383,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4CC03F62C3D874100D0A989 /* PlacesVC.swift in Sources */,
+				E48C2CB12C3E9FEA00C469A0 /* LikedPlacesVC.swift in Sources */,
 				E4CC03FA2C3D8B6400D0A989 /* PlaceData.swift in Sources */,
 				E42B50912C3C3F700024AB85 /* SliderCollectionViewCell.swift in Sources */,
 				E4CC03F82C3D8A1700D0A989 /* PlacesTableViewCell.swift in Sources */,
 				E4B9F70B2C29762B00596B6F /* WelcomeVC.swift in Sources */,
 				E4B9F7072C29762B00596B6F /* AppDelegate.swift in Sources */,
+				E48C2CB52C3F1EB100C469A0 /* PlaceDetailsVC.swift in Sources */,
 				E4B9F7092C29762B00596B6F /* SceneDelegate.swift in Sources */,
 				E42B50672C3C249C0024AB85 /* Constants.swift in Sources */,
+				E48C2CB32C3EA0D900C469A0 /* LikedPlacesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
