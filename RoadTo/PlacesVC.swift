@@ -13,16 +13,17 @@ class PlacesVC: UIViewController{
     @IBOutlet weak var placesTableView: UITableView!
     
     let dataArray:[PlaceData] = [
-        PlaceData(image: "Pamukkale", name: "PAMUKKALE", liked: true),
-        PlaceData(image: "hierapolis", name: "HIERAPOLIS",liked: true),
-        PlaceData(image: "horoz heykeli", name: "HOROZ",liked: false),
-        PlaceData(image: "leodikya", name: "LEODIKYA", liked: false),
-        PlaceData(image: "mağara", name: "MAĞARA", liked: true),
-        PlaceData(image: "antik havuz", name: "KLEOPATRA HAVUZU", liked: true)
+        PlaceData(image: "Pamukkale", name: "PAMUKKALE", liked: true, location: "Pamukkale, Denizli", star: 4.3),
+        PlaceData(image: "hierapolis", name: "HIERAPOLIS",liked: true, location: "Pamukkale, Denizli", star: 4.4),
+        PlaceData(image: "horoz heykeli", name: "HOROZ",liked: false, location: "Merkez, Denizli", star: 4.2),
+        PlaceData(image: "leodikya", name: "LEODIKYA", liked: false, location: "Pamukkale, Denizli", star: 4.1),
+        PlaceData(image: "mağara", name: "MAĞARA", liked: true, location: "Kaklık,  Denizli", star: 3.7),
+        PlaceData(image: "antik havuz", name: "KLEOPATRA HAVUZU", liked: true, location: "Pamukkale, Denizli", star: 4.0)
     ]
     
     var searchingNames = [PlaceData]()
     var searching = false
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +32,7 @@ class PlacesVC: UIViewController{
         
         placesTableView.dataSource = self
         placesTableView.delegate = self
-
+        
         
         self.placesTableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         self.placesTableView.showsVerticalScrollIndicator = false
@@ -47,28 +48,30 @@ class PlacesVC: UIViewController{
 }
 extension PlacesVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if searching {
-            return searchingNames.count
-        } else {
-            return dataArray.count
-        }
+        return searching ? searchingNames.count : dataArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = placesTableView.dequeueReusableCell(withIdentifier: K.identifiers.placesCell, for: indexPath) as! PlacesTableViewCell
         
-        let placeData: PlaceData
-        
-        if searching {
-            placeData = searchingNames[indexPath.row]
-        } else {
-            placeData = dataArray[indexPath.row]
-        }
+        let placeData: PlaceData = searching ? searchingNames[indexPath.row] : dataArray[indexPath.row]
         
         cell.placeImage.image = UIImage(named: placeData.image!)
         cell.placeNameLabel.text = placeData.name
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let vc = storyboard?.instantiateViewController(identifier: "PlaceDetailsVC") as? PlaceDetailsVC{
+            //vc.placeImage =  dataArray[indexPath.row].image
+            vc.tempPlaceName = dataArray[indexPath.row].name!
+            vc.tempPlaceImage = dataArray[indexPath.row].image!
+            vc.tempPlaceLocation = dataArray[indexPath.row].location!
+            vc.tempPlaceStar = dataArray[indexPath.row].star!
+            
+            self.navigationController?.pushViewController(vc, animated: true )
+        }
     }
 }
 extension PlacesVC: UISearchBarDelegate {
