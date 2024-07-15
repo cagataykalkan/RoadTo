@@ -13,8 +13,10 @@ class PlaceDetailsVC: UIViewController {
     @IBOutlet weak var aboutLabel: UILabel!
     @IBOutlet weak var aboutHeaderLabel: UILabel!
     //buttons
-    @IBOutlet weak var rightButton: UIButton!
-    @IBOutlet weak var leftButton: UIButton!
+    @IBOutlet weak var likeButton: UIButton!
+    let likeButtonImages = ["unlikedIcon","likedIcon"]
+    var likeButtonImagesIndex = 0
+    @IBOutlet weak var backButton: UIButton!
     //shadow
     @IBOutlet weak var locationImage: UIImageView!
     @IBOutlet weak var placeLocationLabel: UILabel!
@@ -31,6 +33,7 @@ class PlaceDetailsVC: UIViewController {
     @IBOutlet weak var suitabilityForBaby: UILabel!
     @IBOutlet weak var suitabilityForFamily: UILabel!
     
+    let dataArray = DataManager.shared.dataArray
     
     var tempPlaceName = ""
     var tempPlaceImage = ""
@@ -41,6 +44,8 @@ class PlaceDetailsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.hidesBackButton = true
         
         placeNameLabel.text = tempPlaceName
         placeImage.image = UIImage(named: tempPlaceImage)
@@ -55,11 +60,11 @@ class PlaceDetailsVC: UIViewController {
         aboutLabel.textColor = UIColor(named: K.BrandColors.grey)
         aboutLabel.font = UIFont(name: K.Fonts.poppinsRegular, size: 14)
         
-        leftButton.layer.cornerRadius = 20
-        leftButton.alpha = 0.85
+        backButton.layer.cornerRadius = 20
+        backButton.alpha = 0.85
         
-        rightButton.layer.cornerRadius = 20
-        rightButton.alpha = 0.85
+        likeButton.layer.cornerRadius = 20
+        likeButton.alpha = 0.85
         
         shadowImage.alpha = 0.6
         shadowImage.layer.cornerRadius = 20
@@ -90,13 +95,25 @@ class PlaceDetailsVC: UIViewController {
         valueOfTimeToSpend.font = UIFont(name: K.Fonts.poppinsRegular, size: 14)
         valueOfTimeToSpend.textColor = UIColor(named: K.BrandColors.grey)
         
+        
+        // Başlangıçta likeButton resmini ayarla
+        if let place = dataArray.first(where: { $0.name == tempPlaceName }) {
+            likeButtonImagesIndex = place.liked! ? 1 : 0
+            likeButton.setImage(UIImage(named: likeButtonImages[likeButtonImagesIndex]), for: .normal)
+        }
+        
     }
     
     
-    @IBAction func rightpressed(_ sender: Any) {
-        print("rrrrr")
+    @IBAction func likeButtonPredded(_ sender: Any) {
+        likeButtonImagesIndex = (likeButtonImagesIndex + 1) % likeButtonImages.count
+        likeButton.setImage(UIImage(named: likeButtonImages[likeButtonImagesIndex]), for: .normal)
+        
+        if let index = dataArray.firstIndex(where: { $0.name == tempPlaceName }) {
+            dataArray[index].liked = (likeButtonImagesIndex == 1)
+        }
     }
-    @IBAction func leftpressed(_ sender: Any) {
-        print("llllll")
+    @IBAction func backButtonPressed(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
     }
 }

@@ -13,14 +13,9 @@ class LikedPlacesVC: UIViewController {
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var likedPlacesTableView: UITableView!
     
-    let dataArray:[PlaceData] = [
-        PlaceData(image: "Pamukkale", name: "PAMUKKALE", liked: true),
-        PlaceData(image: "hierapolis", name: "HIERAPOLIS",liked: true),
-        PlaceData(image: "horoz heykeli", name: "HOROZ",liked: false),
-        PlaceData(image: "leodikya", name: "LEODIKYA", liked: false),
-        PlaceData(image: "mağara", name: "MAĞARA", liked: true),
-        PlaceData(image: "antik havuz", name: "KLEOPATRA HAVUZU", liked: true)
-    ]
+
+    let dataArray = DataManager.shared.dataArray
+
     
     var likedPlaces: [PlaceData] {
         return dataArray.filter { $0.liked! }
@@ -30,6 +25,8 @@ class LikedPlacesVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        updateLikedPlaces()
         
         startButton.titleLabel?.font = UIFont(name: K.Fonts.poppinsEkstraBold, size: 20)
         startButton.backgroundColor = UIColor(named: K.BrandColors.black3)
@@ -43,6 +40,17 @@ class LikedPlacesVC: UIViewController {
         self.likedPlacesTableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         self.likedPlacesTableView.showsVerticalScrollIndicator = false
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        updateLikedPlaces()
+        
+    }
+
+    func updateLikedPlaces() {
+        likedPlacesTableView.reloadData() // Tabloyu yenilemek için
+    }
+
     
 }
 extension LikedPlacesVC: UITableViewDataSource, UITableViewDelegate {
@@ -51,15 +59,40 @@ extension LikedPlacesVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard indexPath.row < likedPlaces.count else {
+            fatalError("Index out of range while accessing likedPlaces")
+        }
+        
         let cell = likedPlacesTableView.dequeueReusableCell(withIdentifier: K.identifiers.placesCell, for: indexPath) as! LikedPlacesTableViewCell
-               
-        let placeData: PlaceData
-        placeData = likedPlaces[indexPath.row]
-    
-        cell.placeImage.image = UIImage(named: placeData.image!)
-        cell.placeNameLabel.text = placeData.name
-               
+        
+        let placeData = likedPlaces[indexPath.row]
+        
+        cell.placeImage.image = UIImage(named: placeData.image ?? "")
+        cell.placeNameLabel.text = placeData.name ?? ""
+        
         return cell
     }
+
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard likedPlaces.indices.contains(indexPath.row) else {
+            fatalError("Index out of range while accessing likedPlaces")
+        }
+
+        
+        let selectedPlace = likedPlaces[indexPath.row]
+        
+        if let vc = storyboard?.instantiateViewController(identifier: "PlaceDetailsVC") as? PlaceDetailsVC {
+            vc.tempPlaceName = selectedPlace.name!
+            vc.tempPlaceImage = selectedPlace.image!
+            vc.tempPlaceLocation = selectedPlace.location!
+            vc.tempPlaceStar = selectedPlace.star!
+            
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+
+
+
 
 }

@@ -30,6 +30,12 @@ struct K {   // K = Constants
         static let placesCell = "placesTableViewCell"
         static let toLikedPlaces = "PlacesToLikedPlaces"
         static let placesToDetails = "placesPageToDetailPage"
+        static let likedToDetail = "likedPlacesToDetailPage"
+        static let toEmpty = "placesPageToEmptyPage"
+        static let emptyToPlaces = "emptyToPlaces"
+        static let detailToEmpty = "detailPageToEmptyPage"
+        static let likedToEmpty = "likedToEmpty"
+        static let detailToPlaces = "detailToPlaces"
     }
     
     struct Fonts {

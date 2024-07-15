@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E41DDBF52C4166940067688D /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41DDBF42C4166940067688D /* DataManager.swift */; };
+		E41DDBF72C418CD00067688D /* EmptyLikedListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41DDBF62C418CD00067688D /* EmptyLikedListVC.swift */; };
 		E42B50672C3C249C0024AB85 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42B50662C3C249C0024AB85 /* Constants.swift */; };
 		E42B507D2C3C3B5A0024AB85 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E42B506A2C3C3B590024AB85 /* Poppins-Bold.ttf */; };
 		E42B507E2C3C3B5A0024AB85 /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E42B506B2C3C3B590024AB85 /* Poppins-SemiBoldItalic.ttf */; };
@@ -63,6 +65,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E41DDBF42C4166940067688D /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		E41DDBF62C418CD00067688D /* EmptyLikedListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyLikedListVC.swift; sourceTree = "<group>"; };
 		E42B50662C3C249C0024AB85 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E42B506A2C3C3B590024AB85 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		E42B506B2C3C3B590024AB85 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
@@ -200,6 +204,8 @@
 				E4B9F7362C298EEE00596B6F /* Supporting */,
 				E42B50902C3C3F700024AB85 /* SliderCollectionViewCell.swift */,
 				E4CC03F92C3D8B6400D0A989 /* PlaceData.swift */,
+				E41DDBF42C4166940067688D /* DataManager.swift */,
+				E41DDBF62C418CD00067688D /* EmptyLikedListVC.swift */,
 			);
 			path = RoadTo;
 			sourceTree = "<group>";
@@ -383,9 +389,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4CC03F62C3D874100D0A989 /* PlacesVC.swift in Sources */,
+				E41DDBF52C4166940067688D /* DataManager.swift in Sources */,
 				E48C2CB12C3E9FEA00C469A0 /* LikedPlacesVC.swift in Sources */,
 				E4CC03FA2C3D8B6400D0A989 /* PlaceData.swift in Sources */,
 				E42B50912C3C3F700024AB85 /* SliderCollectionViewCell.swift in Sources */,
+				E41DDBF72C418CD00067688D /* EmptyLikedListVC.swift in Sources */,
 				E4CC03F82C3D8A1700D0A989 /* PlacesTableViewCell.swift in Sources */,
 				E4B9F70B2C29762B00596B6F /* WelcomeVC.swift in Sources */,
 				E4B9F7072C29762B00596B6F /* AppDelegate.swift in Sources */,
