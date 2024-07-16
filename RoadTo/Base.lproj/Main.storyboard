@@ -153,7 +153,7 @@
             </objects>
             <point key="canvasLocation" x="1063.3587786259541" y="3.5211267605633805"/>
         </scene>
-        <!--PlacesVC-->
+        <!--RoadTo Denizli-->
         <scene sceneID="FbP-Vq-uXh">
             <objects>
                 <viewController id="JmV-aX-Qya" customClass="PlacesVC" customModule="RoadTo" customModuleProvider="target" sceneMemberID="viewController">
@@ -169,7 +169,7 @@
                                 </connections>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="koT-b9-hTt">
-                                <rect key="frame" x="0.0" y="184" width="393" height="585"/>
+                                <rect key="frame" x="0.0" y="153" width="393" height="616"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
@@ -232,13 +232,13 @@
                             <constraint firstItem="dha-ri-Mao" firstAttribute="trailing" secondItem="koT-b9-hTt" secondAttribute="trailing" id="JPe-YF-Tom"/>
                             <constraint firstItem="yGd-RG-v4g" firstAttribute="leading" secondItem="dha-ri-Mao" secondAttribute="leading" id="Pb4-BY-ZGH"/>
                             <constraint firstItem="koT-b9-hTt" firstAttribute="leading" secondItem="dha-ri-Mao" secondAttribute="leading" id="kgd-jh-iDZ"/>
-                            <constraint firstItem="koT-b9-hTt" firstAttribute="top" secondItem="dha-ri-Mao" secondAttribute="top" constant="81" id="tP6-bk-4dL"/>
+                            <constraint firstItem="koT-b9-hTt" firstAttribute="top" secondItem="dha-ri-Mao" secondAttribute="top" constant="50" id="tP6-bk-4dL"/>
                             <constraint firstItem="yGd-RG-v4g" firstAttribute="trailing" secondItem="dha-ri-Mao" secondAttribute="trailing" id="xN7-5h-9ob"/>
                             <constraint firstItem="dha-ri-Mao" firstAttribute="bottom" secondItem="koT-b9-hTt" secondAttribute="bottom" id="yW1-8p-zl8"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="EvH-VF-OWT"/>
+                    <navigationItem key="navigationItem" title="RoadTo Denizli" id="EvH-VF-OWT"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="placesTableView" destination="koT-b9-hTt" id="A87-0t-FI5"/>
@@ -414,10 +414,10 @@
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="px9-82-sY3">
-                                <rect key="frame" x="16" y="619" width="361" height="0.0"/>
+                                <rect key="frame" x="16" y="619" width="361" height="233"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SfV-Iq-j6r">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="726.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="1000"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hakkında" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hL-wz-0KO">
                                                 <rect key="frame" x="16" y="8.0000000000000018" width="75" height="21.666666666666671"/>
@@ -688,7 +688,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="q2y-es-Xi7"/>
-        <segue reference="l3S-b3-e2m"/>
+        <segue reference="NxX-lt-7dq"/>
         <segue reference="GZI-IP-wB3"/>
     </inferredMetricsTieBreakers>
     <resources>

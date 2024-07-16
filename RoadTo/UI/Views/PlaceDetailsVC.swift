@@ -33,25 +33,18 @@ class PlaceDetailsVC: UIViewController {
     @IBOutlet weak var suitabilityForBaby: UILabel!
     @IBOutlet weak var suitabilityForFamily: UILabel!
     
-    let dataArray = DataManager.shared.dataArray
-    
-    var tempPlaceName = ""
-    var tempPlaceImage = ""
-    var tempPlaceLocation = ""
-    var tempPlaceStar = 0.0
-    
-    
+    var viewModel: PlaceDetailsViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationItem.hidesBackButton = true
         
-        placeNameLabel.text = tempPlaceName
-        placeImage.image = UIImage(named: tempPlaceImage)
-        placeStarLabel.text = "\(tempPlaceStar)"
-        placeLocationLabel.text = tempPlaceLocation
-        
+        setupUI()
+        updateUI()
+    }
+    
+    private func setupUI() {
         aboutHeaderLabel.text = "Hakkında"
         aboutHeaderLabel.textColor = UIColor(named: K.BrandColors.grey2)
         aboutHeaderLabel.font = UIFont(name: K.Fonts.poppinsSemiBold, size: 18)
@@ -71,18 +64,14 @@ class PlaceDetailsVC: UIViewController {
         
         placeImage.layer.cornerRadius = 20
         
-        
         placeNameLabel.textColor = UIColor(named: K.BrandColors.white)
         placeNameLabel.font = UIFont(name: K.Fonts.poppinsSemiBold, size: 24)
-        
         
         placeLocationLabel.font = UIFont(name: K.Fonts.poppinsRegular, size: 18)
         placeLocationLabel.textColor = UIColor(named: K.BrandColors.grey3)
         
-        
         placeStarLabel.textColor = UIColor(named: K.BrandColors.grey3)
         placeStarLabel.font = UIFont(name: K.Fonts.poppinsRegular, size: 18)
-        
         
         suitabilityForFamily.layer.cornerRadius = 12.5
         suitabilityForFamily.layer.masksToBounds = true
@@ -94,24 +83,20 @@ class PlaceDetailsVC: UIViewController {
         timeToSpend.layer.masksToBounds = true
         valueOfTimeToSpend.font = UIFont(name: K.Fonts.poppinsRegular, size: 14)
         valueOfTimeToSpend.textColor = UIColor(named: K.BrandColors.grey)
-        
-        
-        // Başlangıçta likeButton resmini ayarla
-        if let place = dataArray.first(where: { $0.name == tempPlaceName }) {
-            likeButtonImagesIndex = place.liked! ? 1 : 0
-            likeButton.setImage(UIImage(named: likeButtonImages[likeButtonImagesIndex]), for: .normal)
-        }
-        
+    }
+    
+    private func updateUI() {
+        placeNameLabel.text = viewModel.tempPlaceName
+        placeImage.image = UIImage(named: viewModel.tempPlaceImage)
+        placeStarLabel.text = "\(viewModel.tempPlaceStar)"
+        placeLocationLabel.text = viewModel.tempPlaceLocation
+        likeButton.setImage(viewModel.getLikeButtonImage(), for: .normal)
     }
     
     
     @IBAction func likeButtonPredded(_ sender: Any) {
-        likeButtonImagesIndex = (likeButtonImagesIndex + 1) % likeButtonImages.count
-        likeButton.setImage(UIImage(named: likeButtonImages[likeButtonImagesIndex]), for: .normal)
-        
-        if let index = dataArray.firstIndex(where: { $0.name == tempPlaceName }) {
-            dataArray[index].liked = (likeButtonImagesIndex == 1)
-        }
+        viewModel.toggleLikeStatus()
+        likeButton.setImage(viewModel.getLikeButtonImage(), for: .normal)
     }
     @IBAction func backButtonPressed(_ sender: Any) {
         navigationController?.popViewController(animated: true)
