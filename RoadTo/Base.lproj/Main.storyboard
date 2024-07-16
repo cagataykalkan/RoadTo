@@ -93,9 +93,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDA-il-YyU">
-                                <rect key="frame" x="152.66666666666666" y="294" width="88" height="40"/>
+                                <rect key="frame" x="146.66666666666666" y="294" width="100" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="Ann-jV-z77"/>
+                                    <constraint firstAttribute="height" constant="50" id="Ann-jV-z77"/>
+                                    <constraint firstAttribute="width" constant="100" id="DmE-iO-jaA"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Başla➡️"/>
@@ -157,18 +158,18 @@
             <objects>
                 <viewController id="JmV-aX-Qya" customClass="PlacesVC" customModule="RoadTo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rdi-Hw-aZI">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Gezilecek mekan arayın" translatesAutoresizingMaskIntoConstraints="NO" id="yGd-RG-v4g">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="JmV-aX-Qya" id="uCa-Ly-KNe"/>
                                 </connections>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="koT-b9-hTt">
-                                <rect key="frame" x="0.0" y="81" width="393" height="712"/>
+                                <rect key="frame" x="0.0" y="184" width="393" height="585"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
@@ -256,36 +257,36 @@
             <objects>
                 <viewController storyboardIdentifier="PlaceDetailsVC" id="Xi3-eY-31e" customClass="PlaceDetailsVC" customModule="RoadTo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" ambiguous="YES" id="bYL-wG-Rz0">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="antik havuz" translatesAutoresizingMaskIntoConstraints="NO" id="iiI-AM-uUI">
-                                <rect key="frame" x="16" y="0.0" width="361" height="450"/>
+                                <rect key="frame" x="16" y="103" width="361" height="450"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="450" id="hgi-2a-HqF"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Adsız tasarım-2" translatesAutoresizingMaskIntoConstraints="NO" id="Kpk-JW-byZ">
-                                <rect key="frame" x="24" y="344" width="345" height="90"/>
+                                <rect key="frame" x="24" y="447" width="345" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="UtU-Mm-GJZ"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KLEOPATRA HAVUZU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMU-Qa-Abf">
-                                <rect key="frame" x="32" y="351" width="329" height="26.333333333333314"/>
+                                <rect key="frame" x="32" y="454" width="329" height="26.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location_grey" translatesAutoresizingMaskIntoConstraints="NO" id="yH4-Tw-7KL">
-                                <rect key="frame" x="32" y="393.33333333333331" width="30" height="30"/>
+                                <rect key="frame" x="32" y="496.33333333333331" width="30" height="29.999999999999943"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="PwG-5J-wtN"/>
                                     <constraint firstAttribute="height" constant="30" id="Zut-km-zdb"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star_grey" translatesAutoresizingMaskIntoConstraints="NO" id="Nue-ld-vPP">
-                                <rect key="frame" x="326" y="392" width="30" height="30"/>
+                                <rect key="frame" x="326" y="495" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Obt-FD-Eok"/>
                                     <constraint firstAttribute="width" constant="30" id="TRC-1X-sH1"/>
@@ -294,7 +295,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Denizli, Türkiye" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKZ-SJ-M28">
-                                <rect key="frame" x="62" y="392" width="222" height="30"/>
+                                <rect key="frame" x="62" y="495" width="222" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="5Do-rU-h6r"/>
                                 </constraints>
@@ -303,7 +304,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.3" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHW-0t-3fn">
-                                <rect key="frame" x="302" y="393.33333333333331" width="24.333333333333314" height="30"/>
+                                <rect key="frame" x="302" y="496.33333333333331" width="24.333333333333314" height="29.999999999999943"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="GSY-e3-bhv"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="zXb-av-ryK"/>
@@ -313,7 +314,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="ugC-Gc-g54">
-                                <rect key="frame" x="16" y="458" width="361" height="50"/>
+                                <rect key="frame" x="16" y="561" width="361" height="50"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Pdg-hu-O3i">
                                         <rect key="frame" x="0.0" y="0.0" width="108.33333333333333" height="50"/>
@@ -387,7 +388,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iab-It-k1I">
-                                <rect key="frame" x="24" y="8" width="40" height="40"/>
+                                <rect key="frame" x="24" y="111" width="40" height="40"/>
                                 <color key="backgroundColor" name="AppBlack3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="KU4-qU-KgD"/>
@@ -400,7 +401,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egd-D4-uDX">
-                                <rect key="frame" x="329" y="8" width="40" height="40"/>
+                                <rect key="frame" x="329" y="111" width="40" height="40"/>
                                 <color key="backgroundColor" name="AppBlack3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="SgS-Fd-DWz"/>
@@ -507,7 +508,6 @@
                         <outlet property="suitabilityForFamilyCheck" destination="aGH-5M-3hj" id="HEx-EE-PDA"/>
                         <outlet property="timeToSpend" destination="Qjd-a3-5Yr" id="pAP-QB-4Um"/>
                         <outlet property="valueOfTimeToSpend" destination="fbc-uQ-uv8" id="ZMi-Ra-0Jt"/>
-                        <segue destination="JmV-aX-Qya" kind="show" identifier="detailToPlaces" id="UCL-si-iWV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XxX-lI-Prc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -519,7 +519,7 @@
             <objects>
                 <viewController id="1a0-dZ-rUo" customClass="LikedPlacesVC" customModule="RoadTo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JCe-Em-Qna">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="AkC-eL-NJe">
@@ -580,7 +580,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3h2-pB-eFw">
-                                <rect key="frame" x="96.666666666666686" y="722" width="200" height="50"/>
+                                <rect key="frame" x="96.666666666666686" y="732" width="200" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="65K-yT-52o"/>
                                     <constraint firstAttribute="height" constant="50" id="rnE-Zj-TFR"/>
@@ -613,24 +613,24 @@
             <objects>
                 <viewController id="1aU-d2-v1I" customClass="EmptyLikedListVC" customModule="RoadTo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dom-t7-iVS">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beğeni listeniz boş 😞" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJ7-e5-ovq">
-                                <rect key="frame" x="16" y="110" width="361" height="119.66666666666669"/>
+                                <rect key="frame" x="16" y="212.99999999999997" width="361" height="119.66666666666666"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banner1" translatesAutoresizingMaskIntoConstraints="NO" id="Cey-qx-W1t">
-                                <rect key="frame" x="0.0" y="667" width="393" height="181"/>
+                                <rect key="frame" x="0.0" y="677" width="393" height="181"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="393" id="PLK-ux-Ehv"/>
                                     <constraint firstAttribute="height" constant="181" id="z21-Wh-fbf"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsi-zZ-eM0">
-                                <rect key="frame" x="86.333333333333329" y="429.66666666666669" width="220.33333333333337" height="50"/>
+                                <rect key="frame" x="86.333333333333329" y="532.66666666666663" width="220.33333333333337" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="4hn-iJ-iQY"/>
                                 </constraints>
@@ -687,9 +687,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="NQI-HG-UbV"/>
+        <segue reference="q2y-es-Xi7"/>
         <segue reference="l3S-b3-e2m"/>
-        <segue reference="Cqg-uF-Osy"/>
+        <segue reference="GZI-IP-wB3"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Adsız tasarım-2" width="1587" height="2245"/>

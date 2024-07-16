@@ -29,14 +29,14 @@ class WelcomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         welcomeLabel.text = "Hoşgeldin Çağatay👋"
 
         startExploreLabel.textColor = UIColor(named: K.BrandColors.grey)
-        startExploreLabel.font = UIFont(name: K.Fonts.poppinsMedium, size: 20)
+        startExploreLabel.font = UIFont(name: K.Fonts.poppinsMedium, size: 22)
         startExploreLabel.text = "KEŞFETMEYE BAŞLA"
                 
         userProfilePhotoImage.layer.cornerRadius = 40
         
         startButton.backgroundColor = UIColor(named: K.BrandColors.purple)
         startButton.tintColor = UIColor(named: K.BrandColors.lightPurple)
-        startButton.layer.cornerRadius = 20
+        startButton.layer.cornerRadius = 25
         startButton.titleLabel?.font = UIFont(name: K.Fonts.poppinsRegular, size: 18)
         
         self.sliderCollectionView.backgroundColor = UIColor.white

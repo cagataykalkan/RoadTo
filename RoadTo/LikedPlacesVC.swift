@@ -45,6 +45,9 @@ class LikedPlacesVC: UIViewController {
         
         updateLikedPlaces()
         
+        if likedPlaces.isEmpty {
+            performSegue(withIdentifier: K.identifiers.likedToEmpty, sender: self)
+        }
     }
 
     func updateLikedPlaces() {
