@@ -30,6 +30,10 @@ class LikedPlacesVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         
     }
     
+    @IBAction func startButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: K.identifiers.likedToRoutes, sender: self)
+    }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.numberOfLikedPlaces()
     }
