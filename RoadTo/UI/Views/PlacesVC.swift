@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PlacesVC: UIViewController{
+class PlacesVC: UIViewController {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var placesTableView: UITableView!
@@ -18,7 +18,7 @@ class PlacesVC: UIViewController{
         super.viewDidLoad()
         
         setupUI()
-        
+        placesTableView.reloadData()  // Yalnızca veriler `DataManager` tarafından yüklenecek
     }
     
     private func setupUI() {
@@ -33,13 +33,11 @@ class PlacesVC: UIViewController{
         navigationItem.hidesBackButton = true
     }
     
-    
-    @objc private func navBarButtonTapped(){
+    @objc private func navBarButtonTapped() {
         viewModel.navigateToLikedPlaces(on: self)
     }
-    
-    
 }
+
 extension PlacesVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.numberOfPlaces
@@ -50,7 +48,7 @@ extension PlacesVC: UITableViewDataSource, UITableViewDelegate {
         
         let placeData = viewModel.placeData(at: indexPath.row)
         
-        cell.placeImage.image = UIImage(named: placeData.image!)
+        cell.placeImage.image = UIImage(named: placeData.image ?? "defaultImage") // Varsayılan bir görsel kullanabilirsin
         cell.placeNameLabel.text = placeData.name
         
         return cell

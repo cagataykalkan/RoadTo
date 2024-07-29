@@ -9,8 +9,9 @@ import Foundation
 import UIKit
 
 class PlacesViewModel {
-    
-    private let dataArray = DataManager.shared.dataArray
+    private var dataArray: [PlaceData] {
+        return DataManager.shared.places
+    }
     
     var searchingNames: [PlaceData] = []
     var searching = false

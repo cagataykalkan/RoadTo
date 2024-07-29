@@ -30,6 +30,8 @@
 		E42B508E2C3C3B5A0024AB85 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E42B507B2C3C3B5A0024AB85 /* Poppins-Light.ttf */; };
 		E42B508F2C3C3B5A0024AB85 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E42B507C2C3C3B5A0024AB85 /* Poppins-Medium.ttf */; };
 		E42B50912C3C3F700024AB85 /* SliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42B50902C3C3F700024AB85 /* SliderCollectionViewCell.swift */; };
+		E4592FBC2C53DF110025512F /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = E4592FBB2C53DF110025512F /* GRDB */; };
+		E4592FCD2C540B410025512F /* RoadTo.db in Resources */ = {isa = PBXBuildFile; fileRef = E4592FCC2C540A810025512F /* RoadTo.db */; };
 		E48C2CB12C3E9FEA00C469A0 /* LikedPlacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C2CB02C3E9FEA00C469A0 /* LikedPlacesVC.swift */; };
 		E48C2CB32C3EA0D900C469A0 /* LikedPlacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C2CB22C3EA0D900C469A0 /* LikedPlacesTableViewCell.swift */; };
 		E48C2CB52C3F1EB100C469A0 /* PlaceDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C2CB42C3F1EB100C469A0 /* PlaceDetailsVC.swift */; };
@@ -95,6 +97,7 @@
 		E42B507B2C3C3B5A0024AB85 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
 		E42B507C2C3C3B5A0024AB85 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		E42B50902C3C3F700024AB85 /* SliderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCollectionViewCell.swift; sourceTree = "<group>"; };
+		E4592FCC2C540A810025512F /* RoadTo.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = RoadTo.db; sourceTree = "<group>"; };
 		E48C2CB02C3E9FEA00C469A0 /* LikedPlacesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedPlacesVC.swift; sourceTree = "<group>"; };
 		E48C2CB22C3EA0D900C469A0 /* LikedPlacesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedPlacesTableViewCell.swift; sourceTree = "<group>"; };
 		E48C2CB42C3F1EB100C469A0 /* PlaceDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsVC.swift; sourceTree = "<group>"; };
@@ -128,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4D56F252C46C0E5008E39BF /* RxSwift in Frameworks */,
+				E4592FBC2C53DF110025512F /* GRDB in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +187,14 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		E4592FBF2C53E8E00025512F /* res */ = {
+			isa = PBXGroup;
+			children = (
+				E4592FCC2C540A810025512F /* RoadTo.db */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
 		E4B9F6FA2C29762B00596B6F = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +216,7 @@
 		E4B9F7052C29762B00596B6F /* RoadTo */ = {
 			isa = PBXGroup;
 			children = (
+				E4592FBF2C53E8E00025512F /* res */,
 				E4D56F2B2C46C199008E39BF /* UI */,
 				E4D56F262C46C11C008E39BF /* Data */,
 				E42B50662C3C249C0024AB85 /* Constants.swift */,
@@ -340,6 +353,7 @@
 			name = RoadTo;
 			packageProductDependencies = (
 				E4D56F242C46C0E5008E39BF /* RxSwift */,
+				E4592FBB2C53DF110025512F /* GRDB */,
 			);
 			productName = RoadTo;
 			productReference = E4B9F7032C29762B00596B6F /* RoadTo.app */;
@@ -415,6 +429,7 @@
 			mainGroup = E4B9F6FA2C29762B00596B6F;
 			packageReferences = (
 				E4D56F232C46C0E5008E39BF /* XCRemoteSwiftPackageReference "RxSwift" */,
+				E4592FBA2C53DD150025512F /* XCRemoteSwiftPackageReference "GRDB" */,
 			);
 			productRefGroup = E4B9F7042C29762B00596B6F /* Products */;
 			projectDirPath = "";
@@ -432,6 +447,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4592FCD2C540B410025512F /* RoadTo.db in Resources */,
 				E42B50852C3C3B5A0024AB85 /* Poppins-ExtraLight.ttf in Resources */,
 				E42B508A2C3C3B5A0024AB85 /* Poppins-Italic.ttf in Resources */,
 				E42B50892C3C3B5A0024AB85 /* Poppins-MediumItalic.ttf in Resources */,
@@ -839,6 +855,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		E4592FBA2C53DD150025512F /* XCRemoteSwiftPackageReference "GRDB" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		E4D56F232C46C0E5008E39BF /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
@@ -850,6 +874,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E4592FBB2C53DF110025512F /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4592FBA2C53DD150025512F /* XCRemoteSwiftPackageReference "GRDB" */;
+			productName = GRDB;
+		};
 		E4D56F242C46C0E5008E39BF /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E4D56F232C46C0E5008E39BF /* XCRemoteSwiftPackageReference "RxSwift" */;

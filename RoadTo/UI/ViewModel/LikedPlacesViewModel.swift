@@ -9,10 +9,10 @@ import Foundation
 import UIKit
 
 class LikedPlacesViewModel {
-    private let dataArray = DataManager.shared.dataArray
+    private let places = DataManager.shared.places
     
     var likedPlaces: [PlaceData] {
-        return dataArray.filter { $0.liked ?? false }
+        return places.filter { $0.liked ?? false }
     }
     
     func numberOfLikedPlaces() -> Int {
@@ -26,7 +26,7 @@ class LikedPlacesViewModel {
     func navigateToPlaceDetails(at index: Int, navigationController: UINavigationController?) {
         let selectedPlace = likedPlaces[index]
         
-        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "PlaceDetailsVC") as? PlaceDetailsVC {
+        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PlaceDetailsVC") as? PlaceDetailsVC {
             let placeDetailsViewModel = PlaceDetailsViewModel(tempPlaceName: selectedPlace.name!,
                                                               tempPlaceImage: selectedPlace.image!,
                                                               tempPlaceLocation: selectedPlace.location!,
