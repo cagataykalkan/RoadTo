@@ -7,8 +7,8 @@
 
 import UIKit
 
-class WelcomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-
+class WelcomeVC: UIViewController {
+    
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var startExploreLabel: UILabel!
     @IBOutlet weak var welcomeLabel: UILabel!
@@ -23,15 +23,22 @@ class WelcomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
+        
+        starTimer()
+    }
+    
+    func setupUI() {
+        self.view.backgroundColor = UIColor(named: K.BrandColors.yellow)
         
         welcomeLabel.textColor = UIColor(named: K.BrandColors.black)
         welcomeLabel.font = UIFont(name: K.Fonts.poppinsBold, size: 32)
         welcomeLabel.text = "Hoşgeldin Çağatay👋"
-
+        
         startExploreLabel.textColor = UIColor(named: K.BrandColors.grey)
         startExploreLabel.font = UIFont(name: K.Fonts.poppinsMedium, size: 22)
         startExploreLabel.text = "KEŞFETMEYE BAŞLA"
-                
+        
         userProfilePhotoImage.layer.cornerRadius = 40
         
         startButton.backgroundColor = UIColor(named: K.BrandColors.purple)
@@ -50,15 +57,12 @@ class WelcomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         
         pageController.numberOfPages = SliderImageArray.count
         
-        starTimer()
         
-        self.view.backgroundColor = UIColor(named: K.BrandColors.yellow)
     }
-
+    
     @IBAction func startButtonPressed(_ sender: Any) {
         //performSegue(withIdentifier: "welcomeToPlaces", sender: self)
     }
-    
     
     
     func starTimer( ){
@@ -75,23 +79,5 @@ class WelcomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         }
     }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return SliderImageArray.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = sliderCollectionView.dequeueReusableCell(withReuseIdentifier: K.identifiers.sliderCell, for: indexPath) as! SliderCollectionViewCell
-        
-        cell.sliderImage.image = UIImage(named: SliderImageArray[indexPath.row ])
-        return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: sliderCollectionView.frame.width, height: 220)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        150 //minimumLineSpacingForSectionAt: aralardaki boşlukları ayarlar
-    }
 }
 

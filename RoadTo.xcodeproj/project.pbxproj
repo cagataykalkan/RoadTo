@@ -32,6 +32,10 @@
 		E42B50912C3C3F700024AB85 /* SliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42B50902C3C3F700024AB85 /* SliderCollectionViewCell.swift */; };
 		E4592FBC2C53DF110025512F /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = E4592FBB2C53DF110025512F /* GRDB */; };
 		E4592FCD2C540B410025512F /* RoadTo.db in Resources */ = {isa = PBXBuildFile; fileRef = E4592FCC2C540A810025512F /* RoadTo.db */; };
+		E4592FD02C57707C0025512F /* Places.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4592FCF2C57707C0025512F /* Places.swift */; };
+		E4592FD32C57712F0025512F /* LikedPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4592FD22C57712F0025512F /* LikedPlaces.swift */; };
+		E4592FD62C57732D0025512F /* welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4592FD52C57732D0025512F /* welcome.swift */; };
+		E4592FDD2C577B160025512F /* FirstPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4592FDC2C577B160025512F /* FirstPageVC.swift */; };
 		E48C2CB12C3E9FEA00C469A0 /* LikedPlacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C2CB02C3E9FEA00C469A0 /* LikedPlacesVC.swift */; };
 		E48C2CB32C3EA0D900C469A0 /* LikedPlacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C2CB22C3EA0D900C469A0 /* LikedPlacesTableViewCell.swift */; };
 		E48C2CB52C3F1EB100C469A0 /* PlaceDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C2CB42C3F1EB100C469A0 /* PlaceDetailsVC.swift */; };
@@ -48,7 +52,6 @@
 		E4CC03F82C3D8A1700D0A989 /* PlacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CC03F72C3D8A1700D0A989 /* PlacesTableViewCell.swift */; };
 		E4CC03FA2C3D8B6400D0A989 /* PlaceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CC03F92C3D8B6400D0A989 /* PlaceData.swift */; };
 		E4D56F252C46C0E5008E39BF /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E4D56F242C46C0E5008E39BF /* RxSwift */; };
-		E4D56F2A2C46C164008E39BF /* PlacesDaoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D56F292C46C164008E39BF /* PlacesDaoRepository.swift */; };
 		E4D56F302C46C50C008E39BF /* PlacesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D56F2F2C46C50C008E39BF /* PlacesViewModel.swift */; };
 		E4D56F322C46C556008E39BF /* PlaceDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D56F312C46C556008E39BF /* PlaceDetailsViewModel.swift */; };
 		E4D56F342C46C583008E39BF /* LikedPlacesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D56F332C46C583008E39BF /* LikedPlacesViewModel.swift */; };
@@ -98,6 +101,10 @@
 		E42B507C2C3C3B5A0024AB85 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		E42B50902C3C3F700024AB85 /* SliderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCollectionViewCell.swift; sourceTree = "<group>"; };
 		E4592FCC2C540A810025512F /* RoadTo.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = RoadTo.db; sourceTree = "<group>"; };
+		E4592FCF2C57707C0025512F /* Places.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Places.swift; sourceTree = "<group>"; };
+		E4592FD22C57712F0025512F /* LikedPlaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedPlaces.swift; sourceTree = "<group>"; };
+		E4592FD52C57732D0025512F /* welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcome.swift; sourceTree = "<group>"; };
+		E4592FDC2C577B160025512F /* FirstPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageVC.swift; sourceTree = "<group>"; };
 		E48C2CB02C3E9FEA00C469A0 /* LikedPlacesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedPlacesVC.swift; sourceTree = "<group>"; };
 		E48C2CB22C3EA0D900C469A0 /* LikedPlacesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedPlacesTableViewCell.swift; sourceTree = "<group>"; };
 		E48C2CB42C3F1EB100C469A0 /* PlaceDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsVC.swift; sourceTree = "<group>"; };
@@ -117,7 +124,6 @@
 		E4CC03F52C3D874100D0A989 /* PlacesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesVC.swift; sourceTree = "<group>"; };
 		E4CC03F72C3D8A1700D0A989 /* PlacesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewCell.swift; sourceTree = "<group>"; };
 		E4CC03F92C3D8B6400D0A989 /* PlaceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceData.swift; sourceTree = "<group>"; };
-		E4D56F292C46C164008E39BF /* PlacesDaoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesDaoRepository.swift; sourceTree = "<group>"; };
 		E4D56F2F2C46C50C008E39BF /* PlacesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewModel.swift; sourceTree = "<group>"; };
 		E4D56F312C46C556008E39BF /* PlaceDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsViewModel.swift; sourceTree = "<group>"; };
 		E4D56F332C46C583008E39BF /* LikedPlacesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedPlacesViewModel.swift; sourceTree = "<group>"; };
@@ -187,12 +193,64 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		E4592FBF2C53E8E00025512F /* res */ = {
+		E4592FBF2C53E8E00025512F /* DB */ = {
 			isa = PBXGroup;
 			children = (
 				E4592FCC2C540A810025512F /* RoadTo.db */,
 			);
-			path = res;
+			path = DB;
+			sourceTree = "<group>";
+		};
+		E4592FCE2C57705C0025512F /* Places */ = {
+			isa = PBXGroup;
+			children = (
+				E4CC03F52C3D874100D0A989 /* PlacesVC.swift */,
+				E4592FCF2C57707C0025512F /* Places.swift */,
+			);
+			path = Places;
+			sourceTree = "<group>";
+		};
+		E4592FD12C5771120025512F /* LikedPlaces */ = {
+			isa = PBXGroup;
+			children = (
+				E48C2CB02C3E9FEA00C469A0 /* LikedPlacesVC.swift */,
+				E4592FD22C57712F0025512F /* LikedPlaces.swift */,
+			);
+			path = LikedPlaces;
+			sourceTree = "<group>";
+		};
+		E4592FD42C57730D0025512F /* WelcomePage */ = {
+			isa = PBXGroup;
+			children = (
+				E4B9F70A2C29762B00596B6F /* WelcomeVC.swift */,
+				E4592FD52C57732D0025512F /* welcome.swift */,
+			);
+			path = WelcomePage;
+			sourceTree = "<group>";
+		};
+		E4592FD72C5774040025512F /* PlaceDetails */ = {
+			isa = PBXGroup;
+			children = (
+				E48C2CB42C3F1EB100C469A0 /* PlaceDetailsVC.swift */,
+			);
+			path = PlaceDetails;
+			sourceTree = "<group>";
+		};
+		E4592FD82C57741B0025512F /* EmptyLikedList */ = {
+			isa = PBXGroup;
+			children = (
+				E41DDBF62C418CD00067688D /* EmptyLikedListVC.swift */,
+			);
+			path = EmptyLikedList;
+			sourceTree = "<group>";
+		};
+		E4592FD92C5775EF0025512F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				E4B9F70F2C29762C00596B6F /* Assets.xcassets */,
+				E42B50692C3C3B0A0024AB85 /* Fonts */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		E4B9F6FA2C29762B00596B6F = {
@@ -216,15 +274,17 @@
 		E4B9F7052C29762B00596B6F /* RoadTo */ = {
 			isa = PBXGroup;
 			children = (
-				E4592FBF2C53E8E00025512F /* res */,
+				E4B9F7062C29762B00596B6F /* AppDelegate.swift */,
+				E4B9F7082C29762B00596B6F /* SceneDelegate.swift */,
+				E4592FD92C5775EF0025512F /* Resource */,
+				E4592FBF2C53E8E00025512F /* DB */,
 				E4D56F2B2C46C199008E39BF /* UI */,
 				E4D56F262C46C11C008E39BF /* Data */,
-				E42B50662C3C249C0024AB85 /* Constants.swift */,
 				E4B9F70C2C29762B00596B6F /* Main.storyboard */,
-				E4B9F70F2C29762C00596B6F /* Assets.xcassets */,
 				E4B9F7142C29762C00596B6F /* Info.plist */,
-				E42B50692C3C3B0A0024AB85 /* Fonts */,
 				E4B9F7362C298EEE00596B6F /* Supporting */,
+				E42B50662C3C249C0024AB85 /* Constants.swift */,
+				E4592FDC2C577B160025512F /* FirstPageVC.swift */,
 			);
 			path = RoadTo;
 			sourceTree = "<group>";
@@ -249,8 +309,6 @@
 		E4B9F7362C298EEE00596B6F /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
-				E4B9F7062C29762B00596B6F /* AppDelegate.swift */,
-				E4B9F7082C29762B00596B6F /* SceneDelegate.swift */,
 				E4B9F7112C29762C00596B6F /* LaunchScreen.storyboard */,
 				E42B50682C3C3AFA0024AB85 /* Test */,
 			);
@@ -260,7 +318,6 @@
 		E4D56F262C46C11C008E39BF /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				E4D56F282C46C143008E39BF /* Repo */,
 				E4D56F272C46C124008E39BF /* entity */,
 			);
 			path = Data;
@@ -273,14 +330,6 @@
 				E4CC03F92C3D8B6400D0A989 /* PlaceData.swift */,
 			);
 			path = entity;
-			sourceTree = "<group>";
-		};
-		E4D56F282C46C143008E39BF /* Repo */ = {
-			isa = PBXGroup;
-			children = (
-				E4D56F292C46C164008E39BF /* PlacesDaoRepository.swift */,
-			);
-			path = Repo;
 			sourceTree = "<group>";
 		};
 		E4D56F2B2C46C199008E39BF /* UI */ = {
@@ -325,11 +374,11 @@
 		E4D56F352C46C616008E39BF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E4CC03F52C3D874100D0A989 /* PlacesVC.swift */,
-				E48C2CB02C3E9FEA00C469A0 /* LikedPlacesVC.swift */,
-				E4B9F70A2C29762B00596B6F /* WelcomeVC.swift */,
-				E48C2CB42C3F1EB100C469A0 /* PlaceDetailsVC.swift */,
-				E41DDBF62C418CD00067688D /* EmptyLikedListVC.swift */,
+				E4592FCE2C57705C0025512F /* Places */,
+				E4592FD12C5771120025512F /* LikedPlaces */,
+				E4592FD42C57730D0025512F /* WelcomePage */,
+				E4592FD72C5774040025512F /* PlaceDetails */,
+				E4592FD82C57741B0025512F /* EmptyLikedList */,
 				E4F7A1F32C4EA29B0050BECE /* RoutesVC.swift */,
 			);
 			path = Views;
@@ -495,7 +544,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4D56F302C46C50C008E39BF /* PlacesViewModel.swift in Sources */,
-				E4D56F2A2C46C164008E39BF /* PlacesDaoRepository.swift in Sources */,
 				E4CC03F62C3D874100D0A989 /* PlacesVC.swift in Sources */,
 				E41DDBF52C4166940067688D /* DataManager.swift in Sources */,
 				E4F7A1F42C4EA29B0050BECE /* RoutesVC.swift in Sources */,
@@ -509,9 +557,13 @@
 				E4B9F70B2C29762B00596B6F /* WelcomeVC.swift in Sources */,
 				E4B9F7072C29762B00596B6F /* AppDelegate.swift in Sources */,
 				E48C2CB52C3F1EB100C469A0 /* PlaceDetailsVC.swift in Sources */,
+				E4592FD32C57712F0025512F /* LikedPlaces.swift in Sources */,
+				E4592FD02C57707C0025512F /* Places.swift in Sources */,
+				E4592FDD2C577B160025512F /* FirstPageVC.swift in Sources */,
 				E4B9F7092C29762B00596B6F /* SceneDelegate.swift in Sources */,
 				E4D56F322C46C556008E39BF /* PlaceDetailsViewModel.swift in Sources */,
 				E42B50672C3C249C0024AB85 /* Constants.swift in Sources */,
+				E4592FD62C57732D0025512F /* welcome.swift in Sources */,
 				E48C2CB32C3EA0D900C469A0 /* LikedPlacesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

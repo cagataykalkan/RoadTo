@@ -1,39 +1,14 @@
 //
-//  LikedPlacesVC.swift
+//  LikedPlaces.swift
 //  RoadTo
 //
-//  Created by Çağatay KALKAN on 10.07.2024.
+//  Created by Çağatay KALKAN on 29.07.2024.
 //
 
+import Foundation
 import UIKit
 
-class LikedPlacesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
-    @IBOutlet weak var startButton: UIButton!
-    @IBOutlet weak var likedPlacesTableView: UITableView!
-    
-    let viewModel = LikedPlacesViewModel()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        likedPlacesTableView.dataSource = self
-        likedPlacesTableView.delegate = self
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        likedPlacesTableView.reloadData()
-        
-        if viewModel.numberOfLikedPlaces() == 0 {
-            performSegue(withIdentifier: K.identifiers.likedToEmpty, sender: self)
-        }
-        
-    }
-    
-    @IBAction func startButtonPressed(_ sender: Any) {
-        performSegue(withIdentifier: K.identifiers.likedToRoutes, sender: self)
-    }
-
+extension LikedPlacesVC: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.numberOfLikedPlaces()
     }
