@@ -13,12 +13,16 @@ class FirstPageVC: UIViewController {
     @IBOutlet weak var mailView: UIView!
     @IBOutlet weak var googleView: UIView!
 
+    @IBOutlet weak var signInWithMailButton: UIButton!
+    @IBOutlet weak var signInWithGoogleButton: UIButton!
+    @IBOutlet weak var signInWithAppleButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupUI()
+        
+        setDelegateAndButtonactions()
     }
-
     func setupUI(){
         appleView.layer.borderWidth = 2
         appleView.layer.cornerRadius = 30
@@ -30,14 +34,13 @@ class FirstPageVC: UIViewController {
         mailView.layer.cornerRadius = 30
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setDelegateAndButtonactions(){
+        signInWithGoogleButton.addTarget(self, action: #selector(signInWithGoogleButtonAction), for: .touchUpInside)
     }
-    */
-
+   
+    @objc func signInWithGoogleButtonAction(){
+        let vc = WelcomeVC()
+        vc.modalTransitionStyle = .crossDissolve
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)    }
 }

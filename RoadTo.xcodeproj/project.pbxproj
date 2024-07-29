@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E418683B2C579E30007F5E1A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E418683A2C579E30007F5E1A /* FirebaseAuth */; };
+		E418683D2C579FD4007F5E1A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E418683C2C579FD4007F5E1A /* GoogleService-Info.plist */; };
 		E41DDBF52C4166940067688D /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41DDBF42C4166940067688D /* DataManager.swift */; };
 		E41DDBF72C418CD00067688D /* EmptyLikedListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41DDBF62C418CD00067688D /* EmptyLikedListVC.swift */; };
 		E42B50672C3C249C0024AB85 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42B50662C3C249C0024AB85 /* Constants.swift */; };
@@ -77,6 +79,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E418683C2C579FD4007F5E1A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E41DDBF42C4166940067688D /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		E41DDBF62C418CD00067688D /* EmptyLikedListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyLikedListVC.swift; sourceTree = "<group>"; };
 		E42B50662C3C249C0024AB85 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4D56F252C46C0E5008E39BF /* RxSwift in Frameworks */,
+				E418683B2C579E30007F5E1A /* FirebaseAuth in Frameworks */,
 				E4592FBC2C53DF110025512F /* GRDB in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +285,7 @@
 				E4D56F2B2C46C199008E39BF /* UI */,
 				E4D56F262C46C11C008E39BF /* Data */,
 				E4B9F70C2C29762B00596B6F /* Main.storyboard */,
+				E418683C2C579FD4007F5E1A /* GoogleService-Info.plist */,
 				E4B9F7142C29762C00596B6F /* Info.plist */,
 				E4B9F7362C298EEE00596B6F /* Supporting */,
 				E42B50662C3C249C0024AB85 /* Constants.swift */,
@@ -403,6 +408,7 @@
 			packageProductDependencies = (
 				E4D56F242C46C0E5008E39BF /* RxSwift */,
 				E4592FBB2C53DF110025512F /* GRDB */,
+				E418683A2C579E30007F5E1A /* FirebaseAuth */,
 			);
 			productName = RoadTo;
 			productReference = E4B9F7032C29762B00596B6F /* RoadTo.app */;
@@ -479,6 +485,7 @@
 			packageReferences = (
 				E4D56F232C46C0E5008E39BF /* XCRemoteSwiftPackageReference "RxSwift" */,
 				E4592FBA2C53DD150025512F /* XCRemoteSwiftPackageReference "GRDB" */,
+				E41868392C579E30007F5E1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = E4B9F7042C29762B00596B6F /* Products */;
 			projectDirPath = "";
@@ -498,6 +505,7 @@
 			files = (
 				E4592FCD2C540B410025512F /* RoadTo.db in Resources */,
 				E42B50852C3C3B5A0024AB85 /* Poppins-ExtraLight.ttf in Resources */,
+				E418683D2C579FD4007F5E1A /* GoogleService-Info.plist in Resources */,
 				E42B508A2C3C3B5A0024AB85 /* Poppins-Italic.ttf in Resources */,
 				E42B50892C3C3B5A0024AB85 /* Poppins-MediumItalic.ttf in Resources */,
 				E42B507E2C3C3B5A0024AB85 /* Poppins-SemiBoldItalic.ttf in Resources */,
@@ -907,6 +915,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		E41868392C579E30007F5E1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.29.0;
+			};
+		};
 		E4592FBA2C53DD150025512F /* XCRemoteSwiftPackageReference "GRDB" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/groue/GRDB.swift";
@@ -926,6 +942,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E418683A2C579E30007F5E1A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E41868392C579E30007F5E1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
 		E4592FBB2C53DF110025512F /* GRDB */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E4592FBA2C53DD150025512F /* XCRemoteSwiftPackageReference "GRDB" */;
