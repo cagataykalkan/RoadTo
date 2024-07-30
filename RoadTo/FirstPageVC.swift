@@ -42,5 +42,8 @@ class FirstPageVC: UIViewController {
         let vc = WelcomeVC()
         vc.modalTransitionStyle = .crossDissolve
         vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true)    }
+        present(vc, animated: true)
+        let a = 2
+        let b = "iki"
+    }
 }
