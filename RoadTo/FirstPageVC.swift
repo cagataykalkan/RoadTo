@@ -12,13 +12,13 @@ class FirstPageVC: UIViewController {
     @IBOutlet weak var appleView: UIView!
     @IBOutlet weak var mailView: UIView!
     @IBOutlet weak var googleView: UIView!
-
+    
     @IBOutlet weak var signInWithMailButton: UIButton!
     @IBOutlet weak var signInWithGoogleButton: UIButton!
     @IBOutlet weak var signInWithAppleButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setupUI()
         
         setDelegateAndButtonactions()
@@ -29,15 +29,15 @@ class FirstPageVC: UIViewController {
         
         googleView.layer.borderWidth = 2
         googleView.layer.cornerRadius = 30
-       
+        
         mailView.layer.borderWidth = 2
         mailView.layer.cornerRadius = 30
     }
-
+    
     func setDelegateAndButtonactions(){
         signInWithGoogleButton.addTarget(self, action: #selector(signInWithGoogleButtonAction), for: .touchUpInside)
     }
-   
+    
     @objc func signInWithGoogleButtonAction(){
         let vc = WelcomeVC()
         vc.modalTransitionStyle = .crossDissolve
@@ -46,3 +46,5 @@ class FirstPageVC: UIViewController {
         let a = 2
         let b = "iki"
     }
+    
+}
