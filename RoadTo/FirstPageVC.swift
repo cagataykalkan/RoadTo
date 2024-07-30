@@ -46,4 +46,3 @@ class FirstPageVC: UIViewController {
         let a = 2
         let b = "iki"
     }
-}
