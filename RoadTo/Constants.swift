@@ -35,8 +35,7 @@ struct K {   // K = Constants
         static let emptyToPlaces = "emptyToPlaces"
         static let detailToEmpty = "detailPageToEmptyPage"
         static let likedToEmpty = "likedToEmpty"
-        static let likedToRoutes = "likedToRoutes"
-        static let loadingToWelcome = "loadingToWelcome"
+        static let loginToWelcome = "loginToWelcome"
     }
     
     struct Fonts {

@@ -8,22 +8,36 @@
 import UIKit
 
 class LoginVC: UIViewController {
-
+    @IBOutlet weak var welcomeLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var passwordLabel: UILabel!
+    @IBOutlet weak var welcomeLabel2: UILabel!
+    
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextfield: UITextField!
+    
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var registerButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setupUI()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func setupUI(){
+        welcomeLabel.text = "Sizi tekrar görmek çok güzel,"
+        welcomeLabel.textColor = UIColor(named: K.BrandColors.black3)
+        welcomeLabel.font = UIFont(name: K.Fonts.poppinsMedium, size: 22)
+        
+        
     }
-    */
-
+    
+    @IBAction func loginButtonPressed(_ sender: Any) {
+    }
+    
+    @IBAction func registerButtonPressed(_ sender: Any) {
+    }
+    
 }

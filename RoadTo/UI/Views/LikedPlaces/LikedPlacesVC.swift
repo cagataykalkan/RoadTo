@@ -31,8 +31,6 @@ class LikedPlacesVC: UIViewController{
     }
     
     @IBAction func startButtonPressed(_ sender: Any) {
-        performSegue(withIdentifier: K.identifiers.likedToRoutes, sender: self)
+        performSegue(withIdentifier: K.identifiers.loginToWelcome, sender: self)
     }
-    
-
 }

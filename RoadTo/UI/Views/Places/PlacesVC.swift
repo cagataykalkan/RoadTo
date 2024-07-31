@@ -30,7 +30,6 @@ class PlacesVC: UIViewController {
         placesTableView.showsVerticalScrollIndicator = false
         
         searchBar.delegate = self
-        navigationItem.hidesBackButton = true
     }
     
     @objc private func navBarButtonTapped() {

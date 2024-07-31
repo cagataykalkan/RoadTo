@@ -30,6 +30,8 @@ class WelcomePageVC: UIViewController, UICollectionViewDelegate, UICollectionVie
     }
     
     private func setupUI(){
+        navigationItem.hidesBackButton = true
+        
         userProfilePhotoImage.layer.cornerRadius = 40
 
 
