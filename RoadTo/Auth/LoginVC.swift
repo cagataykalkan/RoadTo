@@ -1,13 +1,13 @@
 //
-//  WelcomeVC.swift
+//  LoginVC.swift
 //  RoadTo
 //
-//  Created by Çağatay KALKAN on 30.07.2024.
+//  Created by Çağatay KALKAN on 31.07.2024.
 //
 
 import UIKit
 
-class WelcomeVC: UIViewController {
+class LoginVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
