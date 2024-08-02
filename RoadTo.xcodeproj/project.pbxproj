@@ -40,6 +40,7 @@
 		E48C2CB12C3E9FEA00C469A0 /* LikedPlacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C2CB02C3E9FEA00C469A0 /* LikedPlacesVC.swift */; };
 		E48C2CB32C3EA0D900C469A0 /* LikedPlacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C2CB22C3EA0D900C469A0 /* LikedPlacesTableViewCell.swift */; };
 		E48C2CB52C3F1EB100C469A0 /* PlaceDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C2CB42C3F1EB100C469A0 /* PlaceDetailsVC.swift */; };
+		E4971C1D2C5BCEEF00ED1CD6 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4971C1C2C5BCEEF00ED1CD6 /* RegisterVC.swift */; };
 		E4B9F7072C29762B00596B6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B9F7062C29762B00596B6F /* AppDelegate.swift */; };
 		E4B9F7092C29762B00596B6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B9F7082C29762B00596B6F /* SceneDelegate.swift */; };
 		E4B9F70B2C29762B00596B6F /* WelcomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B9F70A2C29762B00596B6F /* WelcomePageVC.swift */; };
@@ -112,6 +113,7 @@
 		E48C2CB02C3E9FEA00C469A0 /* LikedPlacesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedPlacesVC.swift; sourceTree = "<group>"; };
 		E48C2CB22C3EA0D900C469A0 /* LikedPlacesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedPlacesTableViewCell.swift; sourceTree = "<group>"; };
 		E48C2CB42C3F1EB100C469A0 /* PlaceDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsVC.swift; sourceTree = "<group>"; };
+		E4971C1C2C5BCEEF00ED1CD6 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		E4B9F7032C29762B00596B6F /* RoadTo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoadTo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B9F7062C29762B00596B6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4B9F7082C29762B00596B6F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -399,6 +401,7 @@
 			children = (
 				E4592FDC2C577B160025512F /* FirstPageVC.swift */,
 				E4E471B02C59BBB200612D65 /* LoginVC.swift */,
+				E4971C1C2C5BCEEF00ED1CD6 /* RegisterVC.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -574,6 +577,7 @@
 				E41DDBF52C4166940067688D /* DataManager.swift in Sources */,
 				E4F7A1F42C4EA29B0050BECE /* RoutesVC.swift in Sources */,
 				E48C2CB12C3E9FEA00C469A0 /* LikedPlacesVC.swift in Sources */,
+				E4971C1D2C5BCEEF00ED1CD6 /* RegisterVC.swift in Sources */,
 				E4CC03FA2C3D8B6400D0A989 /* PlaceData.swift in Sources */,
 				E4D56F342C46C583008E39BF /* LikedPlacesViewModel.swift in Sources */,
 				E4F7A1F62C4EA2C40050BECE /* RoutesViewModel.swift in Sources */,

@@ -57,12 +57,12 @@ class FirstPageVC: UIViewController {
         let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: accessToken)
         Auth.auth().signIn(with: credential) { result, error in
             guard let _ = result, error == nil else { return }
-            self.loginToWelcome()
+            self.authToWelcome()
         }
     }
     
-    func loginToWelcome() {
-        performSegue(withIdentifier: K.identifiers.loginToWelcome, sender: self)
+    func authToWelcome() {
+        performSegue(withIdentifier: K.identifiers.authToWelcome, sender: self)
     }
     
     @objc func signInWithAppleButtonAction() {
