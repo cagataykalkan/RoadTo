@@ -6,7 +6,22 @@
 //
 
 import Foundation
+import UIKit
 
-class RoutesViewMode{
+class RoutesViewModel: UITableViewCell{
+    
+    private let places = DataManager.shared.places
+    
+    var likedPlaces: [PlaceData] {
+        return places.filter { $0.liked ?? false }
+    }
+    
+    func numberOfLikedPlaces() -> Int {
+        return likedPlaces.count
+    }
+    
+    func getPlace(at index: Int) -> PlaceData {
+        return likedPlaces[index]
+    }
     
 }

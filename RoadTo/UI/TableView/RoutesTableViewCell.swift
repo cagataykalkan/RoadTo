@@ -1,36 +1,34 @@
 //
-//  LikedPlacesTableViewCell.swift
+//  RoutesTableViewCell.swift
 //  RoadTo
 //
-//  Created by Çağatay KALKAN on 10.07.2024.
+//  Created by Çağatay KALKAN on 12.08.2024.
 //
 
 import UIKit
 
-class LikedPlacesTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var shadowImage: UIImageView!
-    @IBOutlet weak var placeImage: UIImageView!
-    @IBOutlet weak var placeNameLabel: UILabel!
+class RoutesTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var placeNameLabel: UILabel!
+    @IBOutlet weak var placeImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
         setupUI()
     }
     
     func setupUI(){
-        placeNameLabel.font = UIFont(name: K.Fonts.poppinsBlack, size: 48)
+        placeNameLabel.font = UIFont(name: K.Fonts.poppinsMedium, size: 22)
         placeNameLabel.textColor = UIColor.white
+    
+        backgroundColor = UIColor(named: K.BrandColors.lightPurple)
+        layer.cornerRadius = 5
         
-        placeImage.layer.cornerRadius = 30
-        shadowImage.layer.cornerRadius = 30
     }
-
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
     
@@ -38,7 +36,4 @@ class LikedPlacesTableViewCell: UITableViewCell {
         super.layoutSubviews()
         contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10))
     }
-
-
-    
 }

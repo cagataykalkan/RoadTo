@@ -73,4 +73,10 @@ class LoginVC: UIViewController {
         }
     }
     
+    @IBAction func registerButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: K.identifiers.loginToRegister, sender: self)
+    }
+    
+    
+    
 }

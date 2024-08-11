@@ -32,6 +32,9 @@
 		E42B508E2C3C3B5A0024AB85 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E42B507B2C3C3B5A0024AB85 /* Poppins-Light.ttf */; };
 		E42B508F2C3C3B5A0024AB85 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E42B507C2C3C3B5A0024AB85 /* Poppins-Medium.ttf */; };
 		E42B50912C3C3F700024AB85 /* SliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42B50902C3C3F700024AB85 /* SliderCollectionViewCell.swift */; };
+		E42CC9B02C696935002C51A3 /* RoutesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42CC9AF2C696935002C51A3 /* RoutesVC.swift */; };
+		E42CC9B22C696CF7002C51A3 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42CC9B12C696CF7002C51A3 /* Routes.swift */; };
+		E42CC9B42C697B64002C51A3 /* RoutesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42CC9B32C697B64002C51A3 /* RoutesTableViewCell.swift */; };
 		E4592FBC2C53DF110025512F /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = E4592FBB2C53DF110025512F /* GRDB */; };
 		E4592FCD2C540B410025512F /* RoadTo.db in Resources */ = {isa = PBXBuildFile; fileRef = E4592FCC2C540A810025512F /* RoadTo.db */; };
 		E4592FD02C57707C0025512F /* Places.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4592FCF2C57707C0025512F /* Places.swift */; };
@@ -60,7 +63,6 @@
 		E4E471AB2C59381F00612D65 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = E4E471AA2C59381F00612D65 /* GoogleSignIn */; };
 		E4E471AD2C59381F00612D65 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E4E471AC2C59381F00612D65 /* GoogleSignInSwift */; };
 		E4E471B12C59BBB200612D65 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E471B02C59BBB200612D65 /* LoginVC.swift */; };
-		E4F7A1F42C4EA29B0050BECE /* RoutesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F7A1F32C4EA29B0050BECE /* RoutesVC.swift */; };
 		E4F7A1F62C4EA2C40050BECE /* RoutesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F7A1F52C4EA2C40050BECE /* RoutesViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -106,6 +108,9 @@
 		E42B507B2C3C3B5A0024AB85 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
 		E42B507C2C3C3B5A0024AB85 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		E42B50902C3C3F700024AB85 /* SliderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCollectionViewCell.swift; sourceTree = "<group>"; };
+		E42CC9AF2C696935002C51A3 /* RoutesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesVC.swift; sourceTree = "<group>"; };
+		E42CC9B12C696CF7002C51A3 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		E42CC9B32C697B64002C51A3 /* RoutesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesTableViewCell.swift; sourceTree = "<group>"; };
 		E4592FCC2C540A810025512F /* RoadTo.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = RoadTo.db; sourceTree = "<group>"; };
 		E4592FCF2C57707C0025512F /* Places.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Places.swift; sourceTree = "<group>"; };
 		E4592FD22C57712F0025512F /* LikedPlaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedPlaces.swift; sourceTree = "<group>"; };
@@ -135,7 +140,6 @@
 		E4D56F332C46C583008E39BF /* LikedPlacesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedPlacesViewModel.swift; sourceTree = "<group>"; };
 		E4E471AE2C595AEB00612D65 /* RoadTo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RoadTo.entitlements; sourceTree = "<group>"; };
 		E4E471B02C59BBB200612D65 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		E4F7A1F32C4EA29B0050BECE /* RoutesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesVC.swift; sourceTree = "<group>"; };
 		E4F7A1F52C4EA2C40050BECE /* RoutesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -202,6 +206,15 @@
 				E42B50792C3C3B5A0024AB85 /* Poppins-ThinItalic.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E42CC9AE2C696859002C51A3 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				E42CC9AF2C696935002C51A3 /* RoutesVC.swift */,
+				E42CC9B12C696CF7002C51A3 /* Routes.swift */,
+			);
+			path = Routes;
 			sourceTree = "<group>";
 		};
 		E4592FBF2C53E8E00025512F /* DB */ = {
@@ -371,6 +384,7 @@
 			children = (
 				E48C2CB22C3EA0D900C469A0 /* LikedPlacesTableViewCell.swift */,
 				E4CC03F72C3D8A1700D0A989 /* PlacesTableViewCell.swift */,
+				E42CC9B32C697B64002C51A3 /* RoutesTableViewCell.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -386,12 +400,12 @@
 		E4D56F352C46C616008E39BF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E42CC9AE2C696859002C51A3 /* Routes */,
 				E4592FCE2C57705C0025512F /* Places */,
 				E4592FD12C5771120025512F /* LikedPlaces */,
 				E4592FD42C57730D0025512F /* WelcomePage */,
 				E4592FD72C5774040025512F /* PlaceDetails */,
 				E4592FD82C57741B0025512F /* EmptyLikedList */,
-				E4F7A1F32C4EA29B0050BECE /* RoutesVC.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -572,15 +586,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4E471B12C59BBB200612D65 /* LoginVC.swift in Sources */,
+				E42CC9B22C696CF7002C51A3 /* Routes.swift in Sources */,
 				E4D56F302C46C50C008E39BF /* PlacesViewModel.swift in Sources */,
 				E4CC03F62C3D874100D0A989 /* PlacesVC.swift in Sources */,
 				E41DDBF52C4166940067688D /* DataManager.swift in Sources */,
-				E4F7A1F42C4EA29B0050BECE /* RoutesVC.swift in Sources */,
 				E48C2CB12C3E9FEA00C469A0 /* LikedPlacesVC.swift in Sources */,
 				E4971C1D2C5BCEEF00ED1CD6 /* RegisterVC.swift in Sources */,
 				E4CC03FA2C3D8B6400D0A989 /* PlaceData.swift in Sources */,
 				E4D56F342C46C583008E39BF /* LikedPlacesViewModel.swift in Sources */,
 				E4F7A1F62C4EA2C40050BECE /* RoutesViewModel.swift in Sources */,
+				E42CC9B02C696935002C51A3 /* RoutesVC.swift in Sources */,
 				E42B50912C3C3F700024AB85 /* SliderCollectionViewCell.swift in Sources */,
 				E41DDBF72C418CD00067688D /* EmptyLikedListVC.swift in Sources */,
 				E4CC03F82C3D8A1700D0A989 /* PlacesTableViewCell.swift in Sources */,
@@ -589,6 +604,7 @@
 				E48C2CB52C3F1EB100C469A0 /* PlaceDetailsVC.swift in Sources */,
 				E4592FD32C57712F0025512F /* LikedPlaces.swift in Sources */,
 				E4592FD02C57707C0025512F /* Places.swift in Sources */,
+				E42CC9B42C697B64002C51A3 /* RoutesTableViewCell.swift in Sources */,
 				E4592FDD2C577B160025512F /* FirstPageVC.swift in Sources */,
 				E4B9F7092C29762B00596B6F /* SceneDelegate.swift in Sources */,
 				E4D56F322C46C556008E39BF /* PlaceDetailsViewModel.swift in Sources */,

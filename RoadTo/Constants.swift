@@ -38,6 +38,10 @@ struct K {   // K = Constants
         static let authToWelcome = "authToWelcome"
         static let loginToWelcome = "loginToWelcome"
         static let registerToWelcome = "registerToWelcome"
+        static let loginToRegister = "loginToRegister"
+        static let likedToRoutes = "likedToRoutes"
+        static let routesCell = "routesTableViewCell"
+
     }
     
     struct Fonts {
